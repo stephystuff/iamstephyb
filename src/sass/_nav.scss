@@ -1,0 +1,35 @@
+nav{
+  position: absolute;
+  font-size: 3em;
+}
+
+.main-nav{
+  text-align: left;
+  top: 0;
+  left: 0;
+  padding-left: 25px;
+  ul{
+    padding: 0;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  li{
+    list-style-type: none;
+  }
+  .hidden-nav{
+    display: none;
+  }
+}
+  .social-nav{
+    text-decoration: none;
+    padding-right: 25px;
+    display: inline;
+    top: 0;
+    right: 0;
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+  }

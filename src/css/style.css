@@ -1,11 +1,51 @@
 header {
+  position: relative;
   text-align: center;
   color: #fff;
   background-image: url("/images/rainbow_wood.jpg");
+  background-position: center;
   height: 700px; }
   header h1 {
     margin: 0;
     font-size: 10em;
-    padding-top: 450px; }
+    padding-top: 125px; }
+  header .greeting {
+    margin-top: 50px;
+    font-size: 1.8em;
+    font-weight: bold; }
+    header .greeting img {
+      border-radius: 50%;
+      border: 2px solid #fff;
+      width: 175px;
+      height: 175px; }
+
+nav {
+  position: absolute;
+  font-size: 3em; }
+
+.main-nav {
+  text-align: left;
+  top: 0;
+  left: 0;
+  padding-left: 25px; }
+  .main-nav ul {
+    padding: 0; }
+  .main-nav a {
+    color: #fff;
+    text-decoration: none; }
+  .main-nav li {
+    list-style-type: none; }
+  .main-nav .hidden-nav {
+    display: none; }
+
+.social-nav {
+  text-decoration: none;
+  padding-right: 25px;
+  display: inline;
+  top: 0;
+  right: 0; }
+  .social-nav a {
+    text-decoration: none;
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
