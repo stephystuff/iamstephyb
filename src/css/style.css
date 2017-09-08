@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700");
 header {
   position: relative;
   text-align: center;
@@ -47,5 +48,60 @@ nav {
   .social-nav a {
     text-decoration: none;
     color: #fff; }
+
+.resume {
+  margin: 0 auto;
+  width: 70%; }
+  .resume h1 {
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif; }
+  .resume .resume-header {
+    width: 100%;
+    height: 300px;
+    background-color: #c0dfa8; }
+    .resume .resume-header img {
+      width: 300px;
+      height: 300px;
+      float: left; }
+    .resume .resume-header .contact-info {
+      color: #fff;
+      text-align: center; }
+      .resume .resume-header .contact-info p {
+        color: #919f86; }
+  .resume .resume-sidebar {
+    clear: both;
+    width: 300px;
+    height: 700px;
+    background-color: #e4ecde;
+    padding: 0 25px; }
+    .resume .resume-sidebar h1 {
+      padding-top: 50px;
+      color: #919f86;
+      margin-bottom: 20px; }
+    .resume .resume-sidebar p {
+      margin: 0;
+      color: #545454; }
+    .resume .resume-sidebar .skills p {
+      float: left;
+      line-height: 0.1em;
+      margin-bottom: 20px; }
+    .resume .resume-sidebar .skills .horizontal-line {
+      border-bottom: 3px solid #545454;
+      float: right;
+      text-align: left; }
+    .resume .resume-sidebar .skills .html .horizontal-line {
+      width: 50%; }
+    .resume .resume-sidebar .skills .css {
+      clear: both; }
+      .resume .resume-sidebar .skills .css .horizontal-line {
+        width: 40%; }
+    .resume .resume-sidebar .skills .js {
+      clear: both; }
+      .resume .resume-sidebar .skills .js .horizontal-line {
+        width: 20%; }
+    .resume .resume-sidebar .skills .jquery {
+      clear: both; }
+      .resume .resume-sidebar .skills .jquery .horizontal-line {
+        width: 30%; }
 
 /*# sourceMappingURL=style.css.map */

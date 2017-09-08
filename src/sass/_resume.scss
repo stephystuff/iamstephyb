@@ -1,0 +1,78 @@
+.resume{
+  margin: 0 auto;
+  width: 70%;
+  // height: 100%;
+  h1{
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif;
+  }
+  .resume-header{
+    width: 100%;
+    height: 300px;
+    background-color: #c0dfa8;
+    img{
+      width: 300px;
+      height: 300px;
+      float: left;
+    }
+    .contact-info{
+      color: #fff;
+      text-align: center;
+      p{
+        color: #919f86;
+      }
+    }
+  }
+  .resume-sidebar{
+    clear: both;
+    width: 300px;
+    height: 700px;
+    background-color: #e4ecde;
+    padding: 0 25px;
+    h1{
+      padding-top: 50px;
+      color: #919f86;
+      margin-bottom: 20px;
+    }
+    p{
+      margin: 0;
+      color: #545454;
+    }
+
+    .skills{
+      p{
+        float: left;
+        line-height: 0.1em;
+        margin-bottom: 20px;
+      }
+      .horizontal-line{
+        border-bottom: 3px solid #545454;
+        float: right;
+        text-align: left;
+      }
+      .html{
+        .horizontal-line{
+          width: 50%;
+        }
+      }
+      .css{
+        clear: both;
+        .horizontal-line{
+          width: 40%;
+        }
+      }
+      .js{
+        clear: both;
+        .horizontal-line{
+          width: 20%;
+        }
+      }
+      .jquery{
+        clear: both;
+        .horizontal-line{
+          width: 30%;
+        }
+      }
+    }
+  }
+}
