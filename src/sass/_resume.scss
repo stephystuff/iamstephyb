@@ -1,4 +1,5 @@
 .resume{
+  overflow: hidden;
   margin: 0 auto;
   width: 70%;
   // height: 100%;
@@ -18,6 +19,9 @@
     .contact-info{
       color: #fff;
       text-align: center;
+      h1{
+        margin: 0;
+      }
       p{
         color: #919f86;
       }
@@ -31,8 +35,9 @@
     padding: 0 25px;
     h1{
       padding-top: 50px;
+      padding-bottom: 20px;
       color: #919f86;
-      margin-bottom: 20px;
+      margin: 0;
     }
     p{
       margin: 0;
@@ -40,6 +45,9 @@
     }
 
     .skills{
+      h1{
+        padding-bottom: 30px;
+      }
       p{
         float: left;
         line-height: 0.1em;
