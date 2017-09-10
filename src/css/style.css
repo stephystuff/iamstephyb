@@ -1,16 +1,46 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700");
+html, body {
+  font-family: sans-serif; }
+
 header {
   position: relative;
-  text-align: center;
   color: #fff;
   background-image: url("/images/rainbow_wood.jpg");
   background-position: center;
-  height: 700px; }
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px; }
   header h1 {
     margin: 0;
     font-size: 10em;
-    padding-top: 125px; }
+    padding-top: 170px;
+    text-align: center; }
+  header audio {
+    margin-left: 400px;
+    background: none; }
+  header .audio-control {
+    float: right;
+    margin-right: 350px;
+    margin-top: 10px; }
+    header .audio-control button {
+      position: fixed;
+      background: none;
+      border: none; }
+      header .audio-control button .fa {
+        position: absolute;
+        top: 0;
+        right: 215px;
+        color: #ff8585;
+        font-size: 2.5em;
+        margin-right: 5px; }
+      header .audio-control button .fa-pause-circle {
+        display: none; }
+      header .audio-control button p {
+        font-size: 1.5em;
+        display: inline;
+        text-decoration: underline; }
   header .greeting {
+    text-align: center;
     margin-top: 50px;
     font-size: 1.8em;
     font-weight: bold; }
@@ -25,6 +55,7 @@ nav {
   font-size: 3em; }
 
 .main-nav {
+  position: fixed;
   text-align: left;
   top: 0;
   left: 0;
@@ -40,6 +71,7 @@ nav {
     display: none; }
 
 .social-nav {
+  position: fixed;
   text-decoration: none;
   padding-right: 25px;
   display: inline;
@@ -50,6 +82,7 @@ nav {
     color: #fff; }
 
 .resume {
+  overflow: hidden;
   margin: 0 auto;
   width: 70%; }
   .resume h1 {
@@ -66,6 +99,8 @@ nav {
     .resume .resume-header .contact-info {
       color: #fff;
       text-align: center; }
+      .resume .resume-header .contact-info h1 {
+        margin: 0; }
       .resume .resume-header .contact-info p {
         color: #919f86; }
   .resume .resume-sidebar {
@@ -76,11 +111,14 @@ nav {
     padding: 0 25px; }
     .resume .resume-sidebar h1 {
       padding-top: 50px;
+      padding-bottom: 20px;
       color: #919f86;
-      margin-bottom: 20px; }
+      margin: 0; }
     .resume .resume-sidebar p {
       margin: 0;
       color: #545454; }
+    .resume .resume-sidebar .skills h1 {
+      padding-bottom: 30px; }
     .resume .resume-sidebar .skills p {
       float: left;
       line-height: 0.1em;
@@ -103,5 +141,10 @@ nav {
       clear: both; }
       .resume .resume-sidebar .skills .jquery .horizontal-line {
         width: 30%; }
+
+.about {
+  width: 100%;
+  height: 700px;
+  background-color: #ff8585; }
 
 /*# sourceMappingURL=style.css.map */
