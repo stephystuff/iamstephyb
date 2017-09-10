@@ -4,6 +4,7 @@ nav{
 }
 
 .main-nav{
+  position: fixed;
   text-align: left;
   top: 0;
   left: 0;
@@ -23,6 +24,7 @@ nav{
   }
 }
   .social-nav{
+    position: fixed;
     text-decoration: none;
     padding-right: 25px;
     display: inline;
