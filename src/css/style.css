@@ -15,9 +15,6 @@ header {
     font-size: 10em;
     padding-top: 170px;
     text-align: center; }
-  header audio {
-    margin-left: 400px;
-    background: none; }
   header .audio-control {
     float: right;
     margin-right: 350px;

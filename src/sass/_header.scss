@@ -1,6 +1,5 @@
 header{
   position: relative;
-  // text-align: center;
   color: #fff;
   background-image: url("/images/rainbow_wood.jpg");
   background-position: center;
@@ -14,19 +13,6 @@ header{
     padding-top: 170px;
     text-align: center;
   }
-  audio{
-    margin-left: 400px;
-    background: none;
-  }
-
-  // .audio-control{
-  //   position: absolute;
-  //   display: inline;
-  //   .fa{
-  //     color: pink;
-  //     font-size: 2em;
-  //   }
-  // }
   .audio-control{
     float: right;
     margin-right: 350px;
@@ -35,7 +21,6 @@ header{
       position: fixed;
       background: none;
       border: none;
-      // margin-right: 300px;
       .fa{
         position: absolute;
         top: 0;
@@ -48,7 +33,6 @@ header{
         display: none;
       }
       p{
-        // position: fixed;
         font-size: 1.5em;
         display: inline;
         text-decoration: underline;
