@@ -28,4 +28,17 @@
     audio.pause();
   });
 
+  $(window).scroll(function(){
+    if( $(window).scrollTop() >= 700){
+      $("nav").hide();
+      $(".audio-control").hide();
+    } else{
+      $("nav").show();
+      $(".audio-control").show();
+    }
+  });
+
+
+
+
 }());
