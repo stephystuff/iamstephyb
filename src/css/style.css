@@ -143,5 +143,80 @@ nav {
   width: 100%;
   height: 700px;
   background-color: #ff8585; }
+  .about .container {
+    padding-top: 50px;
+    margin: 0;
+    margin-right: -5px;
+    width: 100%; }
+  .about .cool-fact {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: left;
+    margin-right: 5px; }
+    .about .cool-fact img, .about .cool-fact p {
+      border-radius: 50%;
+      width: inherit;
+      height: inherit;
+      border: 3px solid white; }
+    .about .cool-fact img {
+      position: relative; }
+    .about .cool-fact p {
+      top: 0;
+      right: 0;
+      position: absolute;
+      display: none;
+      text-align: center;
+      color: white; }
+
+.pstreet, .ctv {
+  margin-left: 75px; }
+
+.music {
+  margin-left: 10px; }
+  .music p {
+    background-color: orange; }
+
+#pstreet-p {
+  background-color: yellow; }
+
+#lipstick-p {
+  background-color: red; }
+
+#knits-p {
+  background-color: pink; }
+
+#tennis-p {
+  background-color: lime; }
+
+#frosting-p {
+  background-color: lightblue; }
+
+#iphone-p {
+  background-color: teal; }
+
+#writing-p {
+  background-color: lightgreen; }
+
+#only-p {
+  background-color: purple; }
+
+#foodtruck-p {
+  background-color: pink; }
+
+#apple-p {
+  background-color: orange; }
+
+#ctv-p {
+  background-color: darkred; }
+
+#puzzle-p {
+  background-color: limegreen; }
+
+.cool-fact:hover img {
+  display: none; }
+.cool-fact:hover p {
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
