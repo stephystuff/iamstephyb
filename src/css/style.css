@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700");
 html, body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background-image: url("/images/rainbow_wood.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
 
 header {
   position: relative;
   color: #fff;
-  background-image: url("/images/rainbow_wood.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   height: 900px; }
   header h1 {
     margin: 0;
@@ -16,26 +18,27 @@ header {
     padding-top: 170px;
     text-align: center; }
   header .audio-control {
-    float: right;
-    margin-right: 350px;
-    margin-top: 10px; }
-    header .audio-control button {
-      position: fixed;
-      background: none;
-      border: none; }
-      header .audio-control button .fa {
-        position: absolute;
-        top: 0;
-        right: 215px;
+    margin-left: 65%;
+    position: fixed; }
+    header .audio-control div {
+      position: fixed; }
+      header .audio-control div .fa {
         color: #ff8585;
         font-size: 2.5em;
-        margin-right: 5px; }
-      header .audio-control button .fa-pause-circle {
+        cursor: pointer; }
+      header .audio-control div .fa-play-circle {
+        padding-top: 20px;
+        position: relative; }
+      header .audio-control div .fa-pause-circle {
+        position: absolute;
+        top: 20px;
+        bottom: 0;
         display: none; }
-      header .audio-control button p {
-        font-size: 1.5em;
-        display: inline;
-        text-decoration: underline; }
+    header .audio-control p {
+      font-size: 1.3em;
+      text-decoration: underline;
+      padding-top: 25px;
+      padding-left: 50px; }
   header .greeting {
     text-align: center;
     margin-top: 50px;
@@ -79,90 +82,164 @@ nav {
     color: #fff; }
 
 .resume {
-  overflow: hidden;
   margin: 0 auto;
-  width: 70%; }
+  margin-top: 50px;
+  padding-top: 50px;
+  width: 100%;
+  background-image: url("/images/chalkboard.jpeg");
+  background-size: cover;
+  position: relative;
+  color: white;
+  text-align: right; }
   .resume h1 {
-    text-transform: uppercase;
-    font-family: "Open Sans Condensed", sans-serif; }
-  .resume .resume-header {
+    margin: 0; }
+  .resume .resume-top {
+    padding-top: 25px;
+    background-color: #d9fbf1;
     width: 100%;
-    height: 300px;
-    background-color: #c0dfa8; }
-    .resume .resume-header img {
-      width: 300px;
-      height: 300px;
-      float: left; }
-    .resume .resume-header .contact-info {
-      color: #fff;
-      text-align: center; }
-      .resume .resume-header .contact-info h1 {
-        margin: 0; }
-      .resume .resume-header .contact-info p {
-        color: #919f86; }
-  .resume .resume-sidebar {
-    clear: both;
-    width: 300px;
-    height: 700px;
-    background-color: #e4ecde;
-    padding: 0 25px; }
-    .resume .resume-sidebar h1 {
+    height: 200px;
+    text-align: center;
+    color: grey; }
+    .resume .resume-top #initials {
+      margin: 0 auto;
+      font-family: "Dancing Script", cursive;
+      border: 1.5px solid grey;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 2em;
+      font-weight: lighter; }
+    .resume .resume-top #name {
+      font-family: "Dancing Script", cursive;
+      width: 250px;
+      margin: 0 auto;
+      font-size: 3em;
+      position: relative; }
+    .resume .resume-top #name:before {
+      content: "";
+      position: absolute;
+      left: 100px;
+      bottom: 0;
+      border-bottom: 2px solid grey;
+      height: 1px;
+      width: 25%; }
+    .resume .resume-top p#title {
+      padding-top: 10px;
+      text-transform: uppercase; }
+  .resume .sidebar {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 250px;
+    padding: 50px 10px;
+    height: inherit;
+    background-color: #d8bdcf;
+    text-align: center; }
+    .resume .sidebar img {
+      height: 150px;
+      width: 150px;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-bottom: 50px; }
+    .resume .sidebar h1 {
+      font-size: 1em;
+      text-align: center;
+      text-transform: uppercase;
+      background-image: url("/images/chalkboard.jpeg");
+      border-radius: 10px;
+      padding: 5px 0; }
+    .resume .sidebar li span {
+      font-size: 0.7em;
+      float: right; }
+    .resume .sidebar .skills {
       padding-top: 50px;
-      padding-bottom: 20px;
-      color: #919f86;
-      margin: 0; }
-    .resume .resume-sidebar p {
-      margin: 0;
-      color: #545454; }
-    .resume .resume-sidebar .skills h1 {
-      padding-bottom: 30px; }
-    .resume .resume-sidebar .skills p {
-      float: left;
-      line-height: 0.1em;
-      margin-bottom: 20px; }
-    .resume .resume-sidebar .skills .horizontal-line {
-      border-bottom: 3px solid #545454;
-      float: right;
-      text-align: left; }
-    .resume .resume-sidebar .skills .html .horizontal-line {
-      width: 50%; }
-    .resume .resume-sidebar .skills .css {
-      clear: both; }
-      .resume .resume-sidebar .skills .css .horizontal-line {
-        width: 40%; }
-    .resume .resume-sidebar .skills .js {
-      clear: both; }
-      .resume .resume-sidebar .skills .js .horizontal-line {
-        width: 20%; }
-    .resume .resume-sidebar .skills .jquery {
-      clear: both; }
-      .resume .resume-sidebar .skills .jquery .horizontal-line {
-        width: 30%; }
+      text-align: justify; }
+      .resume .sidebar .skills h1 {
+        margin-bottom: 10px; }
+      .resume .sidebar .skills ul {
+        padding: 0; }
+      .resume .sidebar .skills li {
+        list-style-type: none;
+        text-transform: uppercase; }
+    .resume .sidebar .education p {
+      text-transform: uppercase; }
+    .resume .sidebar .education h1 {
+      margin-bottom: 10px; }
+    .resume .sidebar .education .gray {
+      color: grey; }
+    .resume .sidebar .education span {
+      font-family: cursive;
+      text-transform: capitalize; }
 
-.about {
+.resume-main {
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 700px;
+  height: 1200px;
+  text-align: justify;
+  padding-left: 150px; }
+  .resume-main div {
+    margin-bottom: 50px; }
+  .resume-main h1, .resume-main h2, .resume-main h3 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 10px; }
+  .resume-main h1 {
+    text-transform: uppercase;
+    background-color: #d8bdcf;
+    border-radius: 10px;
+    padding: 5px 0; }
+  .resume-main .job {
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    position: relative; }
+  .resume-main .job:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    width: 125px;
+    height: 125px;
+    border-bottom: 1px solid #d8bdcf; }
+  .resume-main h3 {
+    font-family: cursive;
+    font-size: 1.1em; }
+  .resume-main p {
+    margin-bottom: 5px; }
+  .resume-main li {
+    margin: 5px 0; }
+  .resume-main span {
+    padding-left: 20px; }
+  .resume-main .border {
+    padding: 20px;
+    border: 3px dashed white; }
+  .resume-main #no-border {
+    border: none; }
+
+.cool-facts {
   width: 100%;
   height: 700px;
   background-color: #ff8585; }
-  .about .container {
+  .cool-facts .container {
     padding-top: 50px;
     margin: 0;
     margin-right: -5px;
     width: 100%; }
-  .about .cool-fact {
+  .cool-facts .cool-fact {
     border-radius: 50%;
     width: 200px;
     height: 200px;
     position: relative;
     float: left;
     margin-right: 5px; }
-    .about .cool-fact img, .about .cool-fact p {
+    .cool-facts .cool-fact img, .cool-facts .cool-fact p {
       border-radius: 50%;
       width: inherit;
       height: inherit;
       border: 3px solid white; }
-    .about .cool-fact img {
+    .cool-facts .cool-fact img {
       position: relative; }
-    .about .cool-fact p {
+    .cool-facts .cool-fact p {
       top: 0;
       right: 0;
       position: absolute;

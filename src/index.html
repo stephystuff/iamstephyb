@@ -16,7 +16,7 @@
           <source src="/media/sun.mp3" type="audio/mpeg">
           <source src="/media/sun.ogg" type="audio/ogg">
         </audio>
-        <div class="audio-control">
+        <!-- <div class="audio-control">
           <button id="play" type="button" name="button">
             <i class="fa fa-play-circle" aria-hidden="true"></i>
             <p>Play my favorite jam!</p>
@@ -24,8 +24,16 @@
           <button id="pause" type="button">
             <i class="fa fa-pause-circle" aria-hidden="true"></i>
           </button>
+        </div> -->
 
+        <div class="audio-control">
+          <div>
+            <i id="play" class="fa fa-play-circle" aria-hidden="true"></i>
+            <i id="pause" class="fa fa-pause-circle" aria-hidden="true"></i>
+          </div>
+          <p>Play my favorite jam!</p>
         </div>
+
         <h1>hello.</h1>
         <nav class="main-nav">
           <i class="fa fa-bars" aria-hidden="true"></i>
@@ -51,7 +59,7 @@
         </div>
       </div>
     </header>
-    <section class="about">
+    <section class="cool-facts">
       <div class="container">
         <div class="cool-fact pstreet">
           <img src="/images/pstreet.jpg" alt="">
@@ -109,46 +117,149 @@
     </section>
 
     <section class="resume">
-      <div class="resume-header">
+      <div class="resume-top">
+        <p id="initials">SB</p>
+        <p id="name">Stephy Birch</p>
+        <p id="title">Front End Devloper</p>
+      </div>
+      <div class="sidebar">
         <img src="/images/avatar.jpg" alt="">
-        <div class="contact-info">
-          <h1>Stephanie <strong>Birch</strong></h1>
-          <p>Washington, D.C.</p>
-          <p>phone: (240) 285-3884</p>
-          <p>email: stephanie.birch13@gmail.com</p>
+        <div class="skills">
+          <h1>skills</h1>
+          <ul>
+            <li>html
+              <span>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </span>
+            </li>
+            <li>css3
+              <span>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </span>
+            </li>
+            <li>sass
+              <span>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </span>
+            </li>
+            <li>javascript
+              <span>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+              </span>
+            </li>
+            <li>jquery
+              <span>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="education">
+          <h1>education</h1>
+            <div>
+              <p>Front End Engineering</p>
+              <p class="gray"><span>The Iron Yard</span> <br> 2016 - 2017</p>
+            </div>
+            <div>
+              <p>B.A. Journalism</p>
+              <p class="gray"><span>Hampton University</span> <br> 2003 - 2007</p>
+            </div>
+
         </div>
       </div>
-      <div class="resume-sidebar">
-        <h1>About Me</h1>
-        <p>I am well-prepared to meet and exceed your expectations. As a recent
-          Front-End Web Development Graduate with a history as a Technical Support Specialist, I am
-          accustomed to the rigors of fast-paced, highly-regulated environments requiring sharp attention to
-          detail, consummate accuracy, and outstanding communication skills. If given the opportunity, I will
-          work tirelessly to deliver similar results for TCG while partnering with your staff to accelerate the
-          achievement of your immediate and long-range goals.
-        </p>
-        <div class="skills">
-          <h1>Skills</h1>
-          <div class="html">
-            <p>HTML</p>
-            <div class="horizontal-line"></div>
+      <div class="resume-main">
+        <div class="border about-me">
+          <h1>About Me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Proin a enim tortor.
+            Aliquam vehicula, mi ultrices varius consequat, libero
+            erat pulvinar odio, non euismod velit nunc eu sapien.
+            In ac hendrerit purus. Nulla faucibus sed elit vel iaculis.
+            Sed sagittis ipsum augue, sed volutpat odio luctus id.
+            Integer posuere pellentesque varius.
+            Maecenas eget tincidunt quam.
+          </p>
+        </div>
+        <div class="border job-experience">
+          <div class="job">
+            <h1>Job Experience</h1>
+            <h2><strong>Front-End Engineering Graduate</strong></h2>
+            <h3>The Iron Yard / Oct 2016 - May 2017</h3>
+            <p>Spearheaded the creation of project solutions utilizing JavaScript and MV Frameworks.</p>
+            <p>Key Achievements:</p>
+            <li>Capstone Project: Good Eats - an application platform that assists in the <span>discovery of good,
+              healthy, sustainable food options at present locations</span>
+            </li>
           </div>
-          <div class="css">
-            <p>CSS</p>
-            <div class="horizontal-line"></div>
+          <div class="job">
+            <h2><strong>Technical Support Specialist</strong></h2>
+            <h3>Environmental Working Group / Jan 2016 - Oct 2016</h3>
+            <p>Advised and led in the technical establishment of company systems and computers, diagnosed
+              both hardware inconsistencies and software bugs
+            </p>
+            <p>Key Achievements:</p>
+            <li>Trained and assisted staff in versing various web and computer-based <span>software programs</span></li>
+            <li>Discovered and presented organizational solutions for improved efficiency and <span>processing speed</span></li>
           </div>
-          <div class="js">
-            <p>JavaScript</p>
-            <div class="horizontal-line"></div>
-          </div>
-          <div class="jquery">
-            <p>jQuery</p>
-            <div class="horizontal-line"></div>
+          <div>
+            <h2><strong>Genius</strong></h2>
+            <h3>Apple, Inc. / June 2013 - January 2016</h3>
+            <p>Installed updated software and diagnosed software glitches on all Apple devices, including laptops,
+              desktops, and mobile devices
+            </p>
+            <p>Key Achievements:</p>
+            <li>Recognized for consistent goal and deadline accomplishment</li>
+            <li>Offered consistent excellent customer service at one of the top 50 retail <span>stores in the US</span></li>
+            <li>High ranking customer service scores, with customers requesting repeated <span>service</span></li>
           </div>
         </div>
       </div>
     </section>
-
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -1,86 +1,154 @@
 .resume{
-  overflow: hidden;
   margin: 0 auto;
-  width: 70%;
-  // height: 100%;
+  margin-top: 50px;
+  padding-top: 50px;
+  width: 100%;
+  // height: 900px;
+  background-image: url("/images/chalkboard.jpeg");
+  background-size: cover;
+  position: relative;
+  color: white;
+  text-align: right;
+  h1 {margin: 0;}
+
+  .resume-top{
+    padding-top: 25px;
+    background-color: #d9fbf1;
+    // background-color: #d8bdcf;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: grey;
+    #initials{
+      margin: 0 auto;
+      font-family: "Dancing Script", cursive;
+      border: 1.5px solid grey;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 2em;
+      font-weight: lighter;
+    }
+    #name{
+      font-family: "Dancing Script", cursive;
+      width: 250px;
+      margin: 0 auto;
+      font-size: 3em;
+      position: relative;
+    }
+    #name:before{
+      content: "";
+      position: absolute;
+      left: 100px;
+      bottom: 0;
+      border-bottom: 2px solid grey;
+      height: 1px;
+      width: 25%;
+    }
+    p#title {
+      padding-top: 10px;
+      text-transform: uppercase;
+    }
+  }
+  .sidebar{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 250px;
+    padding: 50px 10px;
+    height: inherit;
+    background-color: #d8bdcf;
+    text-align: center;
+    img{
+      height: 150px;
+      width: 150px;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-bottom: 50px;
+    }
+    h1{
+      font-size: 1em;
+      text-align: center;
+      text-transform: uppercase;
+      background-image: url("/images/chalkboard.jpeg");
+      border-radius: 10px;
+      padding: 5px 0;
+    }
+    li span{
+      font-size: 0.7em;
+      float: right;
+    }
+    .skills{
+      padding-top: 50px;
+      text-align: justify;
+      h1{
+        margin-bottom: 10px;
+      }
+      ul {padding:0;}
+      li{
+        list-style-type: none;
+        text-transform: uppercase;
+      }
+    }
+    .education{
+      p {text-transform: uppercase;}
+      h1 {margin-bottom: 10px;}
+      .gray {color: grey;}
+      span{
+        font-family: cursive;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.resume-main{
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 700px;
+  height: 1200px;
+  text-align: justify;
+  padding-left: 150px;
+  div{
+    margin-bottom: 50px;
+  }
+  h1, h2, h3{
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
   h1{
     text-transform: uppercase;
-    font-family: "Open Sans Condensed", sans-serif;
+    background-color: #d8bdcf;
+    border-radius: 10px;
+    padding: 5px 0;
   }
-  .resume-header{
-    width: 100%;
-    height: 300px;
-    background-color: #c0dfa8;
-    img{
-      width: 300px;
-      height: 300px;
-      float: left;
-    }
-    .contact-info{
-      color: #fff;
-      text-align: center;
-      h1{
-        margin: 0;
-      }
-      p{
-        color: #919f86;
-      }
-    }
+  .job{
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    position: relative;
   }
-  .resume-sidebar{
-    clear: both;
-    width: 300px;
-    height: 700px;
-    background-color: #e4ecde;
-    padding: 0 25px;
-    h1{
-      padding-top: 50px;
-      padding-bottom: 20px;
-      color: #919f86;
-      margin: 0;
-    }
-    p{
-      margin: 0;
-      color: #545454;
-    }
-
-    .skills{
-      h1{
-        padding-bottom: 30px;
-      }
-      p{
-        float: left;
-        line-height: 0.1em;
-        margin-bottom: 20px;
-      }
-      .horizontal-line{
-        border-bottom: 3px solid #545454;
-        float: right;
-        text-align: left;
-      }
-      .html{
-        .horizontal-line{
-          width: 50%;
-        }
-      }
-      .css{
-        clear: both;
-        .horizontal-line{
-          width: 40%;
-        }
-      }
-      .js{
-        clear: both;
-        .horizontal-line{
-          width: 20%;
-        }
-      }
-      .jquery{
-        clear: both;
-        .horizontal-line{
-          width: 30%;
-        }
-      }
-    }
+  .job:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    width: 125px;
+    height: 125px;
+    border-bottom: 1px solid #d8bdcf;
+  }
+  h3 {
+    font-family: cursive;
+    font-size: 1.1em;
+  }
+  p {margin-bottom: 5px;}
+  li {margin: 5px 0}
+  span {padding-left: 20px;}
+  .border {
+    padding: 20px;
+    border: 3px dashed white;
+  }
+  #no-border{
+    border: none;
   }
 }

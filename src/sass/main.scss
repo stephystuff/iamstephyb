@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing Script');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+
 html, body{
   font-family: sans-serif;
+  background-image: url("/images/rainbow_wood.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
 
 @import "header";
 @import "nav";
 @import "resume";
-@import "about";
+@import "cool-facts";

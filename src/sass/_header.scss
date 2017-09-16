@@ -1,10 +1,10 @@
 header{
   position: relative;
   color: #fff;
-  background-image: url("/images/rainbow_wood.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  // background-image: url("/images/rainbow_wood.jpg");
+  // background-position: center;
+  // background-size: cover;
+  // background-attachment: fixed;
   height: 900px;
 
   h1{
@@ -13,30 +13,33 @@ header{
     padding-top: 170px;
     text-align: center;
   }
+
   .audio-control{
-    float: right;
-    margin-right: 350px;
-    margin-top: 10px;
-    button{
+    margin-left: 65%;
+    position: fixed;
+    div{
       position: fixed;
-      background: none;
-      border: none;
-      .fa{
-        position: absolute;
-        top: 0;
-        right: 215px;
+      .fa {
         color: #ff8585;
         font-size: 2.5em;
-        margin-right: 5px;
+        cursor: pointer;
+      }
+      .fa-play-circle{
+        padding-top: 20px;
+        position: relative;
       }
       .fa-pause-circle{
+        position: absolute;
+        top: 20px;
+        bottom: 0;
         display: none;
       }
-      p{
-        font-size: 1.5em;
-        display: inline;
-        text-decoration: underline;
-      }
+    }
+    p {
+      font-size: 1.3em;
+      text-decoration: underline;
+      padding-top: 25px;
+      padding-left: 50px;
     }
   }
   .greeting{
